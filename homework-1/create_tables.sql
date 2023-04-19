@@ -11,7 +11,7 @@ CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     first_name VARCHAR(40) UNIQUE NOT NULL,
     last_name VARCHAR(40) UNIQUE NOT NULL,
-    title  VARCHAR(40) UNIQUE NOT NULL,
+    title  VARCHAR(40) NOT NULL,
     birthdate DATE,
     notes TEXT
 );
